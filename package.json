@@ -1,24 +1,21 @@
 {
-  "name": "socialnetworkapi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nico-patano/SocialNetworkApi.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nico-patano/SocialNetworkApi/issues"
-  },
-  "homepage": "https://github.com/nico-patano/SocialNetworkApi#readme",
-  "dependencies": {
-    "mongoose": "^6.2.7",
-    "sessions": "^0.0.2-7"
+    "name": "social-network-api",
+    "version": "1.0.0",
+    "description": "Mongoose back-end s-n-a-app",
+    "main": "index.js",
+    "license": "",
+    "scripts": {
+      "start": "node server",
+      "dev": "nodemon server",
+      "seed": "node utils/seed.js",
+      "heroku-postbuild": "node utils/seed.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^6.0.13",
+      "dayjs": "^1.11.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.9"
+    }
   }
-}
